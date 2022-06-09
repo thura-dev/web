@@ -1,8 +1,3 @@
-ul{
-    width: 200px;
-    height: 200px;
-    background-color: red;
-}
-ul > li{
-    list-style-type: none;
-}
+console.log('hello');
+console.log('Testing 1');
+console.log('testing 2');
