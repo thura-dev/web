@@ -38,23 +38,64 @@
             justify-content: center;
             align-items: center;
         }
-        
 
-.two{
-    width: 990px;
-    display: flex;
-    justify-content: space-between;
-    margin:auto;
-    margin-top: -100px;
-}
-.two-part{
-    width: 300px;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 0 25px #00000020;
-    padding: 30px 20px;
-}
-     
+
+        .two {
+            width: 990px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: -100px;
+        }
+
+        .two-part {
+            width: 300px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 0 25px #00000020;
+            padding: 30px 20px;
+        }
+        .third{
+            margin:100px auto;
+            width: 990px;
+            display: flex;
+            justify-content: center;
+        }
+        .third-part{
+            width: 500px;
+            text-align: center;
+        }
+        .four{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:violet;
+        }
+        .four-img{
+            width: 450px;
+            border-radius: 50%;
+        }
+        .four-part{
+            width: 450px;
+            text-align: center;
+            padding:0 50px;
+        }
+        .five{
+            background-color:#f4f ;
+            flex-direction:row-reverse; 
+        }
+        .five-part{
+            text-align: right;
+        }
+        @media screen and (max-width:480px){
+            .one, .two, .three, .four, .five{
+                flex-direction: column;
+            }
+            section,div{
+                max-width: 100% !important;
+            }
+        }
     </style>
 </head>
 
@@ -90,7 +131,33 @@
                 sed a praesentium. Ratione?</p>
         </div>
     </section>
+    <section class="third">
+        <div class="third-part">
+            <h1>This is title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius repudiandae nemo voluptates facilis
+                delectus eos quis dolore at accusantium amet quisquam illum laborum esse enim velit exercitationem,
+                tempora architecto pariatur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugit odio quo iusto exercitationem
+                excepturi voluptas quidem velit, similique ex. Obcaecati, impedit asperiores cupiditate dolore odio
+                velit doloribus adipisci quaerat.
+            </p>
+        </div>
+    </section>
+    <section class="four">
+                <img src="https://4.bp.blogspot.com/-CyzbcIdcMn8/XNEu0Ypft4I/AAAAAAAAKwg/l-kaSbxH3dsG3CYXHe8TpkwdvcnGpUTDgCLcBGAs/s1600/poe_mamhe_thar_57045421_2997044376976006_938962668269761770_n.jpg" alt="" class="four-img">
+                <div class="four-part">
+                    <h1>This is my Love</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ratione quae porro. Dicta alias fugit, voluptatibus soluta natus autem commodi sit illum odit odio quisquam asperiores, nisi veniam voluptatem facilis.</p>
+                </div>
+    </section>
 
+    <section class="four five">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdHb6HkEwQGE6QGCnbckRd79EWDAFhFjZwzA&usqp=CAU" class="four-img"/> 
+        <div class="four-part five-part">
+            <h1>This is my Love</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ratione quae porro. Dicta alias fugit, voluptatibus soluta natus autem commodi sit illum odit odio quisquam asperiores, nisi veniam voluptatem facilis.</p>
+        </div>
+</section>
 </body>
 
 </html>
