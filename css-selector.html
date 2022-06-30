@@ -6,34 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selector Testing</title>
     <style>
-       .box{
-        width: 300px;
-        height: 100px;
-        background-color: pink;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-
-       }
-   
-       .box-tail{
-        /* width: 0px; */
-        /* height: 0px; */
-        margin-left: 170px;
-        background-color: pink;
-        border: 30px solid #fff;
-        border-top-color: pink;
-        display: inline-block;
-       }
-    </style>
+      
+     .box{
+      width: 300px;
+      height: 100px;
+      background-color: pink;
+      border-radius: 15px;
+      position: relative;
+     }
+     .box::after{
+      content: "";
+    position: absolute;
+    background-color: black;
+    bottom: -40px;
+    left: 200px;
+    border: 20px solid white;
+    border-top-color: pink;
+    display: inline-block;
+     }
+      </style>
 </head>
 <body>
+  
+
   <div class="box">
-  <h1>Hello</h1>
+
   </div>
-  <div class="box-tail">
 
 </div>
 </body>
