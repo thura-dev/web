@@ -13,31 +13,7 @@
             box-sizing: border-box;
         }
 
-        .bg-gray {
-            background-color: gray;
-        }
-
-        .bg-skyblue {
-            background-color: skyblue;
-        }
-
-        .one {
-            height: 50vh;
-            background: #f5f5f5;
-            display: flex;
-
-        }
-
-        .part {
-            flex-grow: 1;
-
-        }
-
-        .part.right {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+       
 
 
         .two {
@@ -45,119 +21,83 @@
             display: flex;
             justify-content: space-between;
             margin: auto;
-            margin-top: -100px;
+            margin-top: 100px;
         }
 
         .two-part {
             width: 300px;
+            height: 300px;
             text-align: center;
-            background-color: #fff;
+            /* background-image: url(./img/2.jpg); */
             box-shadow: 0 0 25px #00000020;
-            padding: 30px 20px;
+            /* padding: 30px 10px; */
+            border-radius: 10px;
+            
         }
-        .third{
-            margin:100px auto;
-            width: 990px;
+       
+        .heading{
             display: flex;
             justify-content: center;
+            padding: 20px;
         }
-        .third-part{
-            width: 500px;
-            text-align: center;
-        }
-        .four{
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color:violet;
-        }
-        .four-img{
-            width: 450px;
-            border-radius: 50%;
-        }
-        .four-part{
-            width: 450px;
-            text-align: center;
-            padding:0 50px;
-        }
-        .five{
-            background-color:#f4f ;
-            flex-direction:row-reverse; 
-        }
-        .five-part{
-            text-align: right;
-        }
-        @media screen and (max-width:480px){
-            .one, .two, .three, .four, .five{
-                flex-direction: column;
-            }
-            section,div{
-                max-width: 100% !important;
-            }
-        }
+        /* .heading h2::before{
+
+            content: "";
+            width: 300px;
+            height: 2px;
+            background-color: aqua;
+            position: absolute;
+            bottom: 15px;
+        } */
+
+.box{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+     
+     .box::after{
+        content: "";
+            width: 150px;
+            height: 5px;
+            background-color: rgb(111, 0, 255);
+            position: absolute;
+            bottom: -10px;
+    
+
+     }
+
     </style>
 </head>
 
 <body>
-    <section class="one">
-        <div class="part left bg-gray"></div>
-        <div class="part right bg-skyblue">
-            <div class="right-inner" style="width: 300px;">
-                <h1>This is Title</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem nam minima nostrum ipsam adipisci iusto
-                    accusamus quos. Aspernatur quam animi ipsum eaque dolorem voluptatum reprehenderit molestiae culpa
-                    natus assumenda. Alias.</p>
-            </div>
-        </div>
-    </section>
-    <section class="two">
-        <div class="two-part">
-            <h1>This is one</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quos, facilis repudiandae fuga deleniti,
-                minus suscipit id doloremque assumenda voluptate rerum alias totam. Tempora officiis alias, earum
-                consequuntur esse quibusdam!</p>
-        </div>
-        <div class="two-part">
-            <h1>This is two</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam cum ex maiores eius corrupti
-                cumque commodi ipsam quae facilis dicta saepe repellat dolores aliquid nesciunt ad reiciendis, debitis
-                voluptatum.</p>
-        </div>
-        <div class="two-part">
-            <h1>This is three</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium harum tempore, facere provident
-                commodi eius at fuga, maiores temporibus blanditiis natus sequi perspiciatis? Excepturi similique iste
-                sed a praesentium. Ratione?</p>
-        </div>
-    </section>
-    <section class="third">
-        <div class="third-part">
-            <h1>This is title</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius repudiandae nemo voluptates facilis
-                delectus eos quis dolore at accusantium amet quisquam illum laborum esse enim velit exercitationem,
-                tempora architecto pariatur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugit odio quo iusto exercitationem
-                excepturi voluptas quidem velit, similique ex. Obcaecati, impedit asperiores cupiditate dolore odio
-                velit doloribus adipisci quaerat.
-            </p>
-        </div>
-    </section>
-    <section class="four">
-                <img src="https://4.bp.blogspot.com/-CyzbcIdcMn8/XNEu0Ypft4I/AAAAAAAAKwg/l-kaSbxH3dsG3CYXHe8TpkwdvcnGpUTDgCLcBGAs/s1600/poe_mamhe_thar_57045421_2997044376976006_938962668269761770_n.jpg" alt="" class="four-img">
-                <div class="four-part">
-                    <h1>This is my Love</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ratione quae porro. Dicta alias fugit, voluptatibus soluta natus autem commodi sit illum odit odio quisquam asperiores, nisi veniam voluptatem facilis.</p>
-                </div>
-    </section>
 
-    <section class="four five">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdHb6HkEwQGE6QGCnbckRd79EWDAFhFjZwzA&usqp=CAU" class="four-img"/> 
-        <div class="four-part five-part">
-            <h1>This is my Love</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ratione quae porro. Dicta alias fugit, voluptatibus soluta natus autem commodi sit illum odit odio quisquam asperiores, nisi veniam voluptatem facilis.</p>
+    <!-- heading  -->
+        <div class="box">
+            <h2>Activites &  Event</h2>
         </div>
-</section>
+    
+    <!-- img card -->
+    <section class="two">
+        
+        
+        
+        <div class="two-part">
+            <img src="./img/2.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="two-part">
+            
+            <img src="./img/2.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="two-part">
+            <img src="./img/2.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+    
 </body>
 
 </html>

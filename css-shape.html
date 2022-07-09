@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shape Tesing</title>
+    <style>
+        div{
+            display:inline-block;
+        }
+        .square{
+            width: 50px;
+            height: 50px;
+            border:2px solid #000;
+        }
+        .square-rounded{
+            border-radius:2px;  
+        }
+        .circle{
+            width: 50px;
+            height: 50px;
+            border:2px solid #000;
+            border-radius:50%;
+            background-size:cover;
+            background-image:url(../img/2.jpg);
+        
+        }
+        .triangle{
+            border:50px solid #fff;
+            border-bottom-color: aqua;
+            /* border-top-width: 0; */
+        }
+        .triangle2{
+            border-right-color: aqua;
+        }
+        .env{
+           border:50px solid #d5d5d5;
+           border-top-color:blue;
+           border-bottom-width: 20px;
+           border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="square"></div>
+    <div class="square square-rounded"></div>
+    
+
+    <div class="triangle"></div>
+    <div class="triangle triangle2"></div>
+
+
+    <div class="env"></div>
+
+
+
+
+
+
+
+</body>
+</html>
