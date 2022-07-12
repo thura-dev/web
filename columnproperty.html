@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Column Property</title>\
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        body{
+            padding:20px;
+        }
+        .heading{
+            color:cyan;
+            margin-bottom:30px;
+        }
+        .paragraph{
+            color:#333333;
+            column-count:3;
+            column-width:300px;
+            column-rule:1px solid black;
+            column-gap:50px;
+        }
+        .paragraph p{
+            margin-bottom:30px;
+            line-height:2;
+            
+        }
+        .full{
+            column-span:all;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="heading">CSS Column Property</h1>
+    <div class="paragraph">
+        <p class="full">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas esse nostrum voluptate, itaque temporibus at soluta, cupiditate dicta corporis nihil necessitatibus optio molestiae laborum? Ab aliquam temporibus laborum architecto undeoptio molestiae laborum? Ab aliquam temporibus laborum architecto undeoptio molestiae laborum? Ab aliquam temporibus laborum architecto unde.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas esse nostrum voluptate, itaque temporibus at soluta, cupiditate dicta corporis nihil necessitatibus optio molestiae laborum? Ab aliquam temporibus laborum architecto undeoptio molestiae laborum? Ab aliquam temporibus laborum architecto undeoptio molestiae laborum? Ab aliquam temporibus laborum architecto unde.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas esse nostrum voluptate, itaque temporibus at soluta, cupiditate dicta corporis nihil necessitatibus optio molestiae laborum? Ab aliquam temporibus laborum architecto undeoptio molestiae laborum? Ab aliquam temporibus laborum architecto undeoptio molestiae laborum? Ab aliquam temporibus laborum architecto unde.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas esse nostrum voluptate, itaque temporibus at soluta, cupiditate dicta corporis nihil necessitatibus optio molestiae laborum? Ab aliquam temporibus laborum architecto undeoptio molestiae laborum? Ab aliquam temporibus laborum architecto undeoptio molestiae laborum? Ab aliquam temporibus laborum architecto unde.</p>
+        <p class="full">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas esse nostrum voluptate, itaque temporibus at soluta, cupiditate dicta corporis nihil necessitatibus optio molestiae laborum? Ab aliquam temporibus laborum architecto undeoptio molestiae laborum? Ab aliquam temporibus laborum architecto undeoptio molestiae laborum? Ab aliquam temporibus laborum architecto unde.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas esse nostrum voluptate, itaque temporibus at soluta, cupiditate dicta corporis nihil necessitatibus optio molestiae laborum? Ab aliquam temporibus laborum architecto undeoptio molestiae laborum? Ab aliquam temporibus laborum architecto undeoptio molestiae laborum? Ab aliquam temporibus laborum architecto unde.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas esse nostrum voluptate, itaque temporibus at soluta, cupiditate dicta corporis nihil necessitatibus optio molestiae laborum? Ab aliquam temporibus laborum architecto undeoptio molestiae laborum? Ab aliquam temporibus laborum architecto undeoptio molestiae laborum? Ab aliquam temporibus laborum architecto unde.</p>
+        
+        
+    </div>
+</body>
+</html>
