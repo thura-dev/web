@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Part 2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1000px;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin:auto;
+        }
+        .left{
+            width: 200px;
+            animation: toRight 1.5s;
+        }
+        .left img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+        .right{
+            width: 500px;
+            
+        }
+        .right h1{
+            text-align: center;
+            animation: toLeft 1.5s;
+            margin-bottom: 20px;
+        }
+        .right p{
+            text-align: justify;
+            animation: toLeft 1.8s;
+        }
+        #heart{
+            width: 50px;
+            position: fixed;
+            top: 200px;
+            left: 500px;
+            animation: shake 0.5s  2s infinite alternate;
+        }
+        @keyframes toRight{
+            from {
+                transform: translateX(-550px);
+            }
+            to{
+                transform: translateX(0px);
+            }
+        }
+        @keyframes toLeft{
+            from{
+                transform: translateX(550px);
+            }
+            to{
+                transform: translate(0px);
+            }
+        }
+        @keyframes shake{
+            from{
+                transform: scale(1);
+            }
+            to{
+                transform: scale(1.5);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="/img/1.jpeg" alt="">
+        </div>
+        <div class="right">
+            <h1>This is heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in eligendi iure ullam deserunt optio,
+                rerum fugit. Cumque placeat, nihil, quam, nemo tenetur iusto earum culpa ea consectetur rem ipsa.</p>
+        </div>
+    </div>
+    <img src="/img/love-4226.svg" alt="" id="heart">
+</body>
+
+</html>
