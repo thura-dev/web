@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 1000px;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        
+    }
+    .one{
+        width: 200px;
+        animation: toRight 1.5s;
+
+    }
+    .one img{
+        width: 200px;
+    height:200px ;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .two{
+        width: 500px;
+        
+    }
+    .two h1{
+        animation: toLeft 1s; 
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .two p{
+        text-align: justify;
+        animation: toLeft 1.5s; 
+    }
+    #heart{
+        width: 30px;
+        position: fixed;
+        left: 500px;
+        bottom: 250px;
+        margin: auto;
+        animation: shake 0.4s 2s infinite alternate;
+    }
+    @keyframes toRight{
+        from{
+            transform: translateX(-500px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+    @keyframes toLeft{
+        from{
+            transform: translateX(550px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+    @keyframes shake{
+        from{
+            transform: scale(1.5);
+        }
+        to{
+            transform: translate(1);
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="one">
+            <img src="/img/1.jpeg"  alt="">
+        </div>
+        <div class="two">
+            <h1>Poe Ma Ha Thar</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ex harum nulla doloribus debitis,
+                quasi cupiditate totam minus voluptates! Facilis ipsam voluptatibus minus corrupti accusantium adipisci
+                ducimus, officiis temporibus quam.</p>
+        </div>
+    </div>
+   <img src="/img/love-4226.svg" alt="" id="heart">
+</body>
+
+</html>
