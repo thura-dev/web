@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
+        <style>
+            .obj{
+                width:50px;
+                height: 50px;
+                background-color: rgb(0, 0, 0);
+                border-radius:50% ;
+                border:5px solid #ccc;
+                border-color: blueviolet #cc1111;
+                animation: test 10s;
+                transform: translate(900px,500px);
+              
+            }
+            @keyframes test{
+                0%{
+                    transform: translate(-300px,-500px) rotate(0);
+                }
+                20%{
+                    transform: translate(300px,500px) rotate(360deg);
+                }
+                30%{
+                    transform: translate(400px,250px) rotate(720deg);
+                }
+                40%{
+                    transform: translate(500px,500px) rotate(1080deg);
+                }
+                45%{
+                    transform: translate(550px,350px) rotate(1440deg);
+                }
+                50%{
+                    transform: translate(600px,500px) rotate(1800deg);
+                }
+                100%{
+                    transform: translate(900px,500px) rotate(2160deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+    <div class="obj"></div>
+    </body>
+</html>
